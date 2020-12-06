@@ -1,4 +1,4 @@
-function z_k = LASSOADMM(A,b,Lambda,MaxIter,Rho,Alpha)
+function z_k = LASSOADMM(A,b,Lambda,MaxIter,Rho)
 % A: d-by-n
 % b: d-by-m
 % 
@@ -13,14 +13,11 @@ end
 if ~exist('Rho','var')
     Rho = 1;
 end
-if ~exist('Alpha','var')
-    Alpha = 1;
-end
 kappa=Lambda/Rho;
 x_k=zeros(size(A,2),size(b,2));
 z_k=x_k;
 u_k=z_k;
-tmp=eye(size(A,2))/(A'*A+(Rho+Lambda*(1-Alpha))*eye(size(A,2)));
+tmp=eye(size(A,2))/(A'*A+Rho*eye(size(A,2)));
 tmp2=tmp*A'*b;
 for k =1:MaxIter
     x_k=tmp2+tmp*Rho*(z_k-u_k);
