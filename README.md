@@ -9,7 +9,7 @@ run [demo.m](https://github.com/ZhenhuaShi/MvBLS/blob/main/demo.m) to reproduce 
 ## Citation
 ```
 @Article{Shi2020,
-  author  = {Z. {Shi} and X. {Chen} and C. {Zhao} and H. {He} and V. {Stuphorn} and D. {Wu}},
+  author  = {Zhenhua {Shi} and Xiaomo {Chen} and Changming {Zhao} and He {He} and Veit {Stuphorn} and Dongrui {Wu}},
   journal = {IEEE Trans. on Neural Systems and Rehabilitation Engineering},
   title   = {Multi-View Broad Learning System for Primate Oculomotor Decision Decoding},
   year    = {2020},
